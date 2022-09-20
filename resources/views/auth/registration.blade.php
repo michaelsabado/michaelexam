@@ -25,7 +25,7 @@
             <input type="address" class="form-control f mb-3" value='{{ $address }} ' name="address" readonly>
             <div class="h6">Password</div>
             @error('password') <div class="h6 text-danger">{{ $message }}</div> @enderror
-            <input type="password" class="form-control f mb-3" name="password" >
+            <input type="password" class="form-control f mb-3" name="password" placeholder="Enter password">
             <div class="h6">Confirm Password</div>
             @error('confirm_password') <div class="h6 text-danger">{{ $message }}</div> @enderror
             <input type="password" class="form-control f mb-3" name="confirm_password">
