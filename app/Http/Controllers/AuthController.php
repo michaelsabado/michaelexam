@@ -69,7 +69,7 @@ class AuthController extends Controller
         $req->validate([
             'firstname' => 'required',
             'lastname' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users',
             'address' => 'required',
             'password' => 'required|min:8',
             'confirm_password' => 'required|same:password'
